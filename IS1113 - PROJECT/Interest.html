@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <div class="header">
+    <img src="header.jpg" class="img-fluid" alt="Responsive image" width: 100% \9;>
+    </div> 
+	<link rel="stylesheet" type="text/css" href="project.css">
+    <link rel="stylesheet" type="text/css" href="Slider.css">
+	<!--bootstrap links-->
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="project.css">
+    
+	<!--bootstrap links-->
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<title>Interests and Hobbies</title>
+    <div>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #container {
+              overflow: hidden;
+              width: 800px;
+              height: 230px;
+              margin: 0 auto;
+              cursor: pointer;
+              margin-top:150px;
+            }
+
+            #imgs {
+              display: block;
+              padding: 0;
+              width: 200%;
+            }
+
+            #imgs li {
+              padding-right: 10px;
+              display: inline-block;
+             *display:inline;
+            }
+
+            #imgs img {
+              width: 160px;
+              height: 120px;
+            }
+
+            .title {
+              display: block;
+              width: 100%;
+              height: 38px;
+              line-height: 38px;
+              color: white;
+              font-weight: bold;
+              text-align: center;
+              background: #ddd;
+            }
+        </style>
+    </div>
+</head>
+
+<body>
+
+
+    <!--navbar-->
+	 <div class="topnav">
+            <a href="Index.html">Home</a>
+            <a href="WorkExperience.html">Work Experience</a>
+            <a href="Achievements.html">Achievements</a>
+            <a href="Interest.html">Interests</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consultation</a>
+        <div class="dropdown-menu"> 
+      <a style="font-color: black" class="dropdown-item" href="AboutConsult.html">About</a>
+
+      <a class="dropdown-item" href="Ebus1.html">Calculations</a>
+    </div>
+      </div>
+      <!--navbar end-->
+        <body>
+<!-- Jquery image scroller -->
+        <div id="container"> <span class="title">jQuery ImageScroll</span>
+          <ul id="imgs"> 
+           <li><img src="badminton.jpg" alt="" /></li>
+            <li><img src="lakegarda.jpg" alt="" /></li>
+            <li><img src="rockclimbing.jpg" alt="" /></li>
+            <li><img src="lacrosse.jpg" alt="" /></li>
+            <li><img src="New-Orleans.jpg" alt="" /></li>
+          </ul>
+          <span class="title">CallbackDisplay: hidden https://unsplash.it/800/600?image=485!</span> 
+         </div>
+    
+        <div id="controler"> </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="ImageScroll.js"></script>
+        <script type="text/javascript">
+
+          $('#imgs').imageScroll({
+            orientation:"left",
+            speed:600,
+            interval:1000,
+            hoverPause:true,
+            callback:function(){
+              var ordinal = $(this).find("img").first().attr("src");
+              <!-- console.log(ordinal); -->
+              $(this).next("span").text("CallbackDisplay: hidden "+ordinal+"!");
+            }
+          });
+
+        </script>
+        
+        <script type="text/javascript">
+
+              var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', 'UA-36251023-1']);
+              _gaq.push(['_setDomainName', 'jqueryscript.net']);
+              _gaq.push(['_trackPageview']);
+
+              (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+              })();
+
+        </script>
+    
+<div class="row">
+    <div class="col-12">
+        <h1>Interests</h1>
+
+             <p>I have incredibly strong interest in travel and sport. I can't remember a time in my life where I haven't been playing sport, or similarly, a time where I wasn't overcome by wanderlust.</p>
+
+        <h2>Sports</h2>
+
+            <p>Currently I am active in a few of the UCC Clubs - namely badminton, mountaineering and lacrosse.</p>
+            <p>Badminton is a sport that I have been active in since secondary school, playing it all throughout my six years. It's what I would call my "comfort" sport as it's familiar and I already have a foundation in it, unlike the others, which are all sports that I had taken an interest in but haven't had the chance to try out prior to coming into college.</p>
+            <p>Mountaineering is a new environment to me, I have always wanted to go hiking and explore as I love nature and it's a great way to see it. Tying into the travel part of my interests, I would love to one day go hiking in different places around the world.</p>
+            <p>My interest in lacrosse came from hearing about it through my friend who lives in America, where it's a much more established sport. I found similarities in lacrosse and hurling, which I tried out for a little while in primary school, the principles were somewhat the same and so it was took the pressure off learning a completely "new" sport.  While lacrosse as a sport is still trying to find it's footing in Europe, the community is there, and the atmosphere on game days is nothing short of addictive. Everyone is so welcoming and eager to learn from and teach each other.</p>
+        </div>
+<div class="col-12">
+        <h2>Travelling</h2>
+            <p>I love travelling, one day I would love to travel to Lake Garda in Italy and hopefully New Orleans. New Orleans is my dream destination as it is the set of one of my all time favourite shows - The Originals. From that show I fell in love with the music, the culture and the history behind the city.</p>
+</div>
+</div>
+
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+        <script src="ImageScroll.js"></script> 
+</body>
+</html>

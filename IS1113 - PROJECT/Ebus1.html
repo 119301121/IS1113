@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <div class="header">
+        <img src="HC Logo.png" width="500">
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link rel="stylesheet" type="text/css" href="style.CSS">
+    </div>
+
+  
+	<!--bootstrap links-->
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!--j query-->
+    	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+
+	<title>Calculations</title>
+</head>
+<body>
+
+	<!--nav bar-->
+<div class="topnav">
+            <a href="Index.html">Home</a>
+            <a href="WorkExperience.html">Work Experience</a>
+            <a href="Achievements.html">Achievements</a>
+            <a href="Interest.html">Interests</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Consultation</a>
+        <div class="dropdown-menu"> 
+      <a style="font-color: black" class="dropdown-item" href="AboutConsult.html">About</a>
+
+      <a class="dropdown-item" href="Ebus1.html">Calculations</a>
+    </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+ 	<script src="Ebus1Calc.js"></script>
+    	
+<div class="row">
+	<div class="col-4">
+
+        <h1>Services Calculator</h1>
+   	</br>
+
+   	<form method="POST" action="Ebus1Calc.js">
+
+        <!--radio buttons-->
+        <label for="Hyperautomation">
+        	<input type="radio" id="rbhyperauto" name="service" value="200" />
+        	Hyperautomation €200
+        </label>
+    </br>
+
+        <label for="Multiexperience">
+        	<input type="radio" id="rbmultiex" name="service" value="500" />
+        	Multiexperience €500
+        </label>
+    </br>
+
+    	<label for="Distributed Cloud">
+    		<input type="radio" id="rbdiscloud" name="service" value="1000" />
+    		Distributed Cloud €1000
+    	</label>
+    </br>
+
+    	<!--subtotal--> 
+    	<label for="Subtotal">
+    		Subtotal:
+    		<input type="text" id="subtotal" value="0.00" readonly/>
+    	</label>
+    </br>
+
+    <!--discount--> 
+    	<label for="discount">
+    		Discount of 5%:
+    		<input type="text" id="discount" name="discount" value="0.00" readonly/>
+    	</label>
+    </br>
+
+    <!--vat-->
+    	<label for="vat">
+    		VAT of 20%:
+    		<input type="text" id="vat" value="0.00" readonly/>
+    	</label>
+    </br>
+
+    <!--total--> 
+    	<label for="total">
+    		Total:
+    		<input type="text" id="total" value="0.00" readonly/>
+   		</label>
+   	</br>
+   </div>
+</div>
+
+   	<!--buttons to clear or proceed-->
+   		</form>
+            <br/>
+            <button onClick="calcSub()" button type="submit" id="btncalcSub" class="button disabled">Calculate Cost</button>
+            <button><a role="button" href="Ebus1.html">Clear Choice</a></button>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
